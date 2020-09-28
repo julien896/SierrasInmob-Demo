@@ -1,8 +1,10 @@
 import React from 'react'
 
 const Header = () => {
+
     return ( 
-        <div id="header-hero-container">
+        <>
+<div id="header-hero-container">
         <header>
             <div className="flex container">
                 <a id="logo" href="#">Traslasierra Inmobiliaria</a>
@@ -31,7 +33,11 @@ const Header = () => {
                 <p>.Establecer métodos permanentes de sondeo de la satisfacción percibida por nuestros Clientes internos y externos como base para la mejora de nuestro sistema de gestión</p>
             </div>
         </section>
-        </div>
+</div>
+
+            </>
+
+
         );
 }
  
