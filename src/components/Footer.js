@@ -13,7 +13,7 @@ const Footer = () => {
                 <h5>Links</h5>
                 <ul>
                     <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Servicios</a></li>
                     <li><a href="#">Contacto</a></li>
                 </ul>
             </div>
@@ -27,9 +27,9 @@ const Footer = () => {
 
                 <h5 class="follow-us">Seguinos</h5>
                 <ul>
-                    <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-                    <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-                    <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                    <li><a href="#"><span class="fab fa-facebook-f">Facebook</span></a></li>
+                    <li><a href="#"><span class="fab fa-twitter">Twitter</span></a></li>
+                    <li><a href="#"><span class="fab fa-instagram">Instagram</span></a></li>
                 </ul>
             </div>
         </div>

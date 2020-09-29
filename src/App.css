@@ -95,7 +95,7 @@ p.large-paragraph {
   position: relative;
 }
 
-header {
+.header {
   background: transparent;
   padding: 1rem 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -103,6 +103,11 @@ header {
   width: 100%;
   z-index: 3;
 }
+
+.header.active{
+  background-color: #f5f5f5;
+}
+
 
 #logo {
   font-family: "Roboto", "Helvetica", "Sans-serif";
@@ -113,6 +118,11 @@ header {
   position: relative;
   top: 4px;
 }
+
+.header.active ul li a {
+  color: black;
+}
+
 
 .hamburger-menu {
   background-color: transparent;
@@ -205,6 +215,7 @@ header ul.is-sticky li a.active {
 #properties {
   margin: 4rem 0 8rem;
   position: relative;
+
 }
 
 #properties h2 {
@@ -213,6 +224,7 @@ header ul.is-sticky li a.active {
 
 #properties .container {
   position: relative;
+
 }
 
 #properties .container:before {
@@ -221,6 +233,13 @@ header ul.is-sticky li a.active {
   right: 80px;
   top: 18px;
   color: #999;
+}
+
+.di{
+  display: inline-block;
+  margin-left:15px;
+  margin-right:15px;
+  margin-bottom:8px;
 }
 
 #properties-slider a.slick-arrow {
@@ -242,8 +261,8 @@ header ul.is-sticky li a.active {
 }
 
 #properties-slider img {
-  width: 100%;
-  display: block;
+  width: 310px;
+  height:370px;
 }
 
 #properties-slider .property-details {
@@ -285,7 +304,14 @@ header ul.is-sticky li a.active {
 #properties button.rounded {
   display: block;
   margin: 2rem auto 0;
-  width: 350px;
+  width: 180px;
+}
+
+#the-best img {
+  width: 600px;
+  height:570px;
+  margin-right:35px;
+
 }
 
 #contact {
@@ -587,6 +613,7 @@ footer small a:hover {
 
   #the-best .flex > img {
       display: none;
+
   }
 
   #the-best .flex > div {
@@ -604,7 +631,7 @@ footer small a:hover {
   }
 
   #properties button.rounded {
-      width: 300px;
+      width: 50px;
   }
 
   #services .flex > div {
