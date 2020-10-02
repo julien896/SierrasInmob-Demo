@@ -6,7 +6,7 @@ const Footer = () => {
         <div class="flex container">
             <div class="footer-about">
                 <h5>Sobre Nosotros</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere laudantium magnam voluptatum autem. Amet aliquid nesciunt veritatis aliquam.</p>
+                <p>Deseamos mejorar el ambiente en el cual vivimos, colaborando en la realización de los sueños de nuestros clientes, amigos y también de la gente que trabaja con nosotros, brindando en forma desinteresada asesoramiento profesional para la toma de decisiones.</p>
             </div>
 
             <div class="footer-quick-links">

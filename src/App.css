@@ -261,8 +261,9 @@ header ul.is-sticky li a.active {
 }
 
 #properties-slider img {
-  width: 310px;
+  width: 350px;
   height:370px;
+  border-radius: 3px;
 }
 
 #properties-slider .property-details {
@@ -681,6 +682,29 @@ footer small a:hover {
   footer h5.follow-us {
       margin-top: 2rem;
   }
+}
+
+/* Propiedades */
+
+.ca{
+  height:600px;
+}
+
+#img{
+  width:700px;
+  height:350px;
+  border-radius: 4px;
+}
+.prox{
+  width:100%;
+background-color:whitesmoke;  
+background-repeat: no-repeat;
+  margin-top: 20px;
+  display:flex;
+  justify-content:center;
+  flex-direction: column;
+  vertical-align:center;
+  align-items: center;
 }
 
 @media (max-width: 500px) {

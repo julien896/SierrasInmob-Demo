@@ -1,16 +1,25 @@
 import React from 'react'
+import {BrowserRouter, Switch, Route, Link } from 'react-router-dom'
+import a4 from './a4.jpg'
+import b4 from './b4.jpg'
+import c1 from './c1.jpg'
+import d5 from './d5.jpg'
+import e4 from './e4.jpg'
+import f4 from './f4.jpg'
+
 
 
 const Propiedades = () => {
     
 
     return ( 
+        
         <section id="properties">
         <div className="container">
             <h2>Propiedades</h2>
             <div id="properties-slider" className="slick">
                 <div className="di">
-                    <img src="https://www.villageneralbelgrano.com/imgs/productos/foto_628089435.jpg" alt="Property 1" />
+                    <img src={a4} alt="Property 1" />
                     <div class="property-details">
                         <p class="price">$3,400,000</p>
                         <span class="beds">6 beds</span>
@@ -19,12 +28,12 @@ const Propiedades = () => {
                         <address>
                             480 12th, Unit 14, San Francisco, CA
                         </address>
-                        <button class="rounded">Ver más</button>
+                        <Link to="/propiedades1" style={{textDecoration:"none"}}><button class="rounded">Ver más</button></Link>
                     </div>
                 </div>
 
                 <div className="di">
-                    <img className="im" src="https://www.villageneralbelgrano.com/imgs/productos/foto_628089435.jpg" alt="Property 1" />
+                    <img className="im" src={b4} alt="Property 1" />
                     <div class="property-details">
                         <p class="price">$3,400,000</p>
                         <span class="beds">6 beds</span>
@@ -33,12 +42,12 @@ const Propiedades = () => {
                         <address>
                             480 12th, Unit 14, San Francisco, CA
                         </address>
-                        <button class="rounded">Ver más</button>
+                        <Link to="/propiedades2" style={{textDecoration:"none"}}><button class="rounded">Ver más</button></Link> 
                     </div>
                 </div>
 
                 <div className="di">
-                    <img className="im" src="https://www.villageneralbelgrano.com/imgs/productos/foto_628089435.jpg" alt="Property 1" />
+                    <img className="im" src={c1} alt="Property 1" />
                     <div class="property-details">
                         <p class="price">$3,400,000</p>
                         <span class="beds">6 beds</span>
@@ -47,12 +56,12 @@ const Propiedades = () => {
                         <address>
                             480 12th, Unit 14, San Francisco, CA
                         </address>
-                        <button class="rounded">Ver más</button>
+                        <Link to="/propiedades3" style={{textDecoration:"none"}}><button class="rounded">Ver más</button></Link> 
                     </div>
                 </div>
 
                 <div className="di">
-                    <img className="im" src="https://www.villageneralbelgrano.com/imgs/productos/foto_628089435.jpg" alt="Property 1" />
+                    <img className="im" src={d5} alt="Property 1" />
                     <div class="property-details">
                         <p class="price">$3,400,000</p>
                         <span class="beds">6 beds</span>
@@ -61,12 +70,12 @@ const Propiedades = () => {
                         <address>
                             480 12th, Unit 14, San Francisco, CA
                         </address>
-                        <button class="rounded">Ver más</button>
+                        <Link to="/propiedades4" style={{textDecoration:"none"}}><button class="rounded">Ver más</button></Link> 
                     </div>
                 </div>
 
                 <div className="di">
-                    <img className="im" src="https://s3.amazonaws.com/cliksi-reynolds-prd/243536/25962924773712947142084819990458903684048022846236833110344472295931885612452.jpg" alt="Property 1" />
+                    <img className="im" src={e4} alt="Property 1" />
                     <div class="property-details">
                         <p class="price">$3,400,000</p>
                         <span class="beds">6 beds</span>
@@ -75,12 +84,12 @@ const Propiedades = () => {
                         <address>
                             480 12th, Unit 14, San Francisco, CA
                         </address>
-                        <button class="rounded">Ver más</button>
+                        <Link to="/propiedades5" style={{textDecoration:"none"}}><button class="rounded">Ver más</button></Link> 
                     </div>
                 </div>
 
                 <div className="di">
-                    <img className="im" src="https://s3.amazonaws.com/cliksi-reynolds-prd/243536/25962924773712947142084819990458903684048022846236833110344472295931885612452.jpg" alt="Property 1" />
+                    <img className="im" src={f4} alt="Property 1" />
                     <div class="property-details">
                         <p class="price">$3,400,000</p>
                         <span class="beds">6 beds</span>
@@ -89,11 +98,11 @@ const Propiedades = () => {
                         <address>
                             480 12th, Unit 14, San Francisco, CA
                         </address>
-                        <button class="rounded">Ver más</button>
+                        <Link to="/propiedades6" style={{textDecoration:"none"}}><button class="rounded">Ver más</button></Link> 
                     </div>
                 </div>
             </div>
-
+            
         </div>
     </section>
      );
