@@ -697,8 +697,8 @@ footer small a:hover {
 }
 .prox{
   width:100%;
-background-color:whitesmoke;  
-background-repeat: no-repeat;
+  background-color:whitesmoke;  
+  background-repeat: no-repeat;
   margin-top: 20px;
   display:flex;
   justify-content:center;

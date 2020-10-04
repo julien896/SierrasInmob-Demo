@@ -1,11 +1,11 @@
 import React from 'react'
-import {BrowserRouter, Switch, Route, Link } from 'react-router-dom'
-import a4 from './a4.jpg'
-import b4 from './b4.jpg'
-import c1 from './c1.jpg'
-import d5 from './d5.jpg'
-import e4 from './e4.jpg'
-import f4 from './f4.jpg'
+import { Link } from 'react-router-dom'
+import a4 from './images/1/a4.jpg'
+import b4 from './images/2/b4.jpg'
+import c1 from './images/3/c1.jpg'
+import d5 from './images/4/d5.jpg'
+import e4 from './images/5/e4.jpg'
+import f4 from './images/6/f4.jpg'
 
 
 

@@ -1,16 +1,25 @@
 ﻿import React from 'react';
 import { Formik } from 'formik';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import uuid from 'uuid/v4'
 import Schema from '../Schema'
 
+
+
 const Contacto = () => ( 
+    
         <>
+
      <Formik
                     initialValues={{ name: '', email: '', motivo: '', mensaje:'' }}
                     validationSchema={Schema}
                     onSubmit={( values, { setSubmitting }) => {
+                    const notify = () => toast("Tu mensaje ha sido enviado!");
                     setTimeout(() => {
                     values.id=uuid();
+                    notify();
+                    console.log(values)
                     setSubmitting(false);
                     }, 1000);
                     }}
@@ -26,15 +35,12 @@ const Contacto = () => (
     <section id="contact">
         <div class="container">
             <h2>Contactanos</h2>
-            {console.log(values)}
         <div class="flex">  
 
                 <div id="form-container">
                     <h3>Dejá un mensaje</h3>
                         
-
-                  
-                    <form onSubmit={handleSubmit}>
+                    <form id="form" onSubmit={handleSubmit}>
                         <label for="name">Nombre</label>
                         <input 
                         type="text" 
@@ -72,7 +78,8 @@ const Contacto = () => (
                                   value={values.mensaje}
                         >Escribí tu mensaje..</textarea>
                         {errors.mensaje && touched.mensaje && errors.mensaje}
-                        <button class="rounded">Enviar</button>
+                        <button type="submit" class="rounded">Enviar</button>
+                        <ToastContainer />
                     </form>
                     </div>
 
@@ -86,7 +93,7 @@ const Contacto = () => (
                     <a href="#">3544-32-2323</a>
 
                     <label>Email</label>
-                    <a href="#">ouremail@domain.com</a>
+                    <a href="">ouremail@domain.com</a>
                 </div>
         </div>
         </div>
