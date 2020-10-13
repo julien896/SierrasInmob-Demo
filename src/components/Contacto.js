@@ -16,9 +16,11 @@ const Contacto = () => (
                     validationSchema={Schema}
                     onSubmit={( values, { setSubmitting }) => {
                     const notify = () => toast("Tu mensaje ha sido enviado!");
+                    function resetForm() {document.getElementsByName("name", "email", "motivo", "mensaje").reset();}
                     setTimeout(() => {
                     values.id=uuid();
                     notify();
+                    resetForm();
                     console.log(values)
                     setSubmitting(false);
                     }, 1000);
@@ -40,7 +42,7 @@ const Contacto = () => (
                 <div id="form-container">
                     <h3>Dejá un mensaje</h3>
                         
-                    <form id="form" onSubmit={handleSubmit}>
+                    <form id="form" value="form" onSubmit={handleSubmit}>
                         <label for="name">Nombre</label>
                         <input 
                         type="text" 

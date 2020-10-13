@@ -1,11 +1,11 @@
 import React from 'react';
-import Footer from '../Footer';
+import FooterProps from '../FooterProps';
 import HeaderProps from '../HeaderProps';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import { Carousel } from 'react-responsive-carousel';
-import a from '../images/1/a.jpg';
-import a1 from '../images/1/a1.jpg';
-import a3 from '../images/1/a3.jpg';
+import a from '../../images/1/a.jpg';
+import a1 from '../../images/1/a1.jpg';
+import a3 from '../../images/1/a3.jpg';
 
 
 const Propiedades1 = () => {
@@ -33,7 +33,7 @@ const Propiedades1 = () => {
         
         </div>
 
-        <Footer/>
+        <FooterProps/>
         </>
      );
 }

@@ -1,4 +1,7 @@
 import React, {useState} from 'react'
+import { Link, animateScroll as scroll } from "react-scroll";
+import './Header.css'
+
 
 const Header = () => {
 
@@ -30,9 +33,9 @@ const Header = () => {
 
                     <ul id="nav-menu">
                         <li><a href="#" className="Inicio">Inicio</a></li>
-                        <li><a href="·" target="_blank">Propiedades</a></li>
-                        <li><a href="#">Nosotros</a></li>
-                        <li><a href="#">Contacto</a></li>
+                        <li style={{cursor:"pointer"}}><Link  to="properties" smooth={true} offset={-82} spy={true}>Propiedades</Link></li>
+                        <li style={{cursor:"pointer"}}><Link to="the-best" smooth={true} offset={-95} spy={true}>Servicios</Link></li>
+                        <li style={{cursor:"pointer"}}><Link to="contact" smooth={true} offset={-82} spy={true}>Contacto</Link></li>
                         <li id="close-flyout"><span className="fas fa-times"></span></li>
                     </ul>
                 </nav>

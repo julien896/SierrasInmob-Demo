@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import a4 from './images/1/a4.jpg'
-import b4 from './images/2/b4.jpg'
-import c1 from './images/3/c1.jpg'
-import d5 from './images/4/d5.jpg'
-import e4 from './images/5/e4.jpg'
-import f4 from './images/6/f4.jpg'
+import a4 from '../images/1/a4.jpg'
+import b4 from '../images/2/b4.jpg'
+import c1 from '../images/3/c1.jpg'
+import d5 from '../images/4/d5.jpg'
+import e4 from '../images/5/e4.jpg'
+import f4 from '../images/6/f4.jpg'
 
 
 
@@ -28,7 +28,7 @@ const Propiedades = () => {
                         <address>
                             480 12th, Unit 14, San Francisco, CA
                         </address>
-                        <Link to="/propiedades1" style={{textDecoration:"none"}}><button class="rounded">Ver más</button></Link>
+                        <Link to="/propiedades1#" style={{textDecoration:"none"}}><button class="rounded">Ver más</button></Link>
                     </div>
                 </div>
 
